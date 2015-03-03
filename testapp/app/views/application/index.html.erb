@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+
+		<style>
+
+		</style>
+
+	</head>
+
+	<body>
+		<title>Music Player</title>
+		<p>HELLO WORLD!!!!</p>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		    <div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="#">Musicality</a>
+		        </div>
+		    </div> 
+		</nav>
+		<br>
+		<br>
+		<br>
+		<center>
+			<h3>Sign-Up</h3>
+			<%= form_tag('/signup', method: :post) do %>
+				<div> Name: 	</div> <input type='text' name='name' />
+				<div> Username: </div> <input type='text' name='username' />
+				<div> Password: </div> <input type='password' name='password' />
+				<div> Confirm Password: </div> <input type='password' name='password_confirm' />
+				</br> <input type='submit' value='signup' /><br>
+			<%= link_to "Already a member? Sign in now", login_path %>
+			<% end %>
+		</center>
+
+		
+	</body>
+
+</head>
+
+
+
+		
